@@ -1,24 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import './App.css';
+
+import TripleTriad from './components/tripleTriad';
+import DungeonsGuide from './components/dungeonsGuide';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Dungeons Guide</Link>
+            </li>
+            <li>
+              <Link to="/tripletriad">TripleTriad</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/tripletriad">
+            <TripleTriad />
+          </Route>
+          <Route path="/">
+            <DungeonsGuide/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
     </div>
   );
 }
