@@ -9,11 +9,36 @@ import arrLogo from '../../assets/arr.png';
 import hvwLogo from '../../assets/hw.png';
 import sbLogo from '../../assets/sb.png';
 
+import Searchbar from '../searchbar';
+
+const DEFAULT_DUNGEONS_LISTINGS = DUNGEONS_LISTING;
+
 class DungeonsGuide extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            dungeonsList: DEFAULT_DUNGEONS_LISTINGS
+        }
+    }
+
+    searchList(searchTerm) {
+        if (!searchTerm || searchTerm.trim() === '') {
+            this.setState({ dungeonsList: DEFAULT_DUNGEONS_LISTINGS });
+        } else {
+            const filteredList = DEFAULT_DUNGEONS_LISTINGS.filter((dungeon) => {
+                return dungeon.name.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+            });
+
+            this.setState({ dungeonsList: filteredList })
+        }
+    }
+
     renderList() {
-        const arrDungeons = DUNGEONS_LISTING.filter((dungeon) => dungeon.exp === 'arr');
-        const hvwDungeons = DUNGEONS_LISTING.filter((dungeon) => dungeon.exp === 'hvw');
-        const sbDungeons = DUNGEONS_LISTING.filter((dungeon) => dungeon.exp === 'sb');
+        const { dungeonsList } = this.state;
+
+        const arrDungeons = dungeonsList.filter((dungeon) => dungeon.exp === 'arr');
+        const hvwDungeons = dungeonsList.filter((dungeon) => dungeon.exp === 'hvw');
+        const sbDungeons = dungeonsList.filter((dungeon) => dungeon.exp === 'sb');
 
         return (
             <>
@@ -60,10 +85,7 @@ class DungeonsGuide extends React.Component {
     render() {
         return (
             <div className={styles.container}>
-
-
-
-
+                <Searchbar search={(dungeon) => this.searchList(dungeon)} />
                 {this.renderList()}
             </div>
         );
