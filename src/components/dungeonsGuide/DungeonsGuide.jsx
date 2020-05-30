@@ -1,7 +1,9 @@
 import React from 'react';
 
+import styles from './DungeonsGuide.module.scss';
+
 const DungeonsGuide = () => (
-    <div>
+    <div className={styles.container}>
         Dungeons Guide
     </div>
 );
