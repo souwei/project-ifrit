@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/souwei/project-ifrit/static/css/main.3cb06297.chunk.css",
-    "main.js": "/souwei/project-ifrit/static/js/main.3685ae53.chunk.js",
-    "main.js.map": "/souwei/project-ifrit/static/js/main.3685ae53.chunk.js.map",
-    "runtime-main.js": "/souwei/project-ifrit/static/js/runtime-main.28ce371e.js",
-    "runtime-main.js.map": "/souwei/project-ifrit/static/js/runtime-main.28ce371e.js.map",
-    "static/js/2.c424ab64.chunk.js": "/souwei/project-ifrit/static/js/2.c424ab64.chunk.js",
-    "static/js/2.c424ab64.chunk.js.map": "/souwei/project-ifrit/static/js/2.c424ab64.chunk.js.map",
-    "index.html": "/souwei/project-ifrit/index.html",
-    "precache-manifest.b688cd1bce239c5dd885e8f650d5cbad.js": "/souwei/project-ifrit/precache-manifest.b688cd1bce239c5dd885e8f650d5cbad.js",
-    "service-worker.js": "/souwei/project-ifrit/service-worker.js",
-    "static/css/main.3cb06297.chunk.css.map": "/souwei/project-ifrit/static/css/main.3cb06297.chunk.css.map",
-    "static/js/2.c424ab64.chunk.js.LICENSE.txt": "/souwei/project-ifrit/static/js/2.c424ab64.chunk.js.LICENSE.txt",
-    "static/media/arr.png": "/souwei/project-ifrit/static/media/arr.d9ba01db.png",
-    "static/media/hw.png": "/souwei/project-ifrit/static/media/hw.def5ba16.png",
-    "static/media/sb.png": "/souwei/project-ifrit/static/media/sb.a4bdae05.png"
+    "main.css": "/project-ifrit/static/css/main.3cb06297.chunk.css",
+    "main.js": "/project-ifrit/static/js/main.00867ff1.chunk.js",
+    "main.js.map": "/project-ifrit/static/js/main.00867ff1.chunk.js.map",
+    "runtime-main.js": "/project-ifrit/static/js/runtime-main.344292ea.js",
+    "runtime-main.js.map": "/project-ifrit/static/js/runtime-main.344292ea.js.map",
+    "static/js/2.c424ab64.chunk.js": "/project-ifrit/static/js/2.c424ab64.chunk.js",
+    "static/js/2.c424ab64.chunk.js.map": "/project-ifrit/static/js/2.c424ab64.chunk.js.map",
+    "index.html": "/project-ifrit/index.html",
+    "precache-manifest.349b332115f2fd95e5cdf1364bbc2d18.js": "/project-ifrit/precache-manifest.349b332115f2fd95e5cdf1364bbc2d18.js",
+    "service-worker.js": "/project-ifrit/service-worker.js",
+    "static/css/main.3cb06297.chunk.css.map": "/project-ifrit/static/css/main.3cb06297.chunk.css.map",
+    "static/js/2.c424ab64.chunk.js.LICENSE.txt": "/project-ifrit/static/js/2.c424ab64.chunk.js.LICENSE.txt",
+    "static/media/arr.png": "/project-ifrit/static/media/arr.d9ba01db.png",
+    "static/media/hw.png": "/project-ifrit/static/media/hw.def5ba16.png",
+    "static/media/sb.png": "/project-ifrit/static/media/sb.a4bdae05.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.28ce371e.js",
+    "static/js/runtime-main.344292ea.js",
     "static/js/2.c424ab64.chunk.js",
     "static/css/main.3cb06297.chunk.css",
-    "static/js/main.3685ae53.chunk.js"
+    "static/js/main.00867ff1.chunk.js"
   ]
 }
