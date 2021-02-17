@@ -2,6 +2,8 @@ import React from 'react';
 
 import './TripleTriad.css';
 
+import Card from '../card';
+
 const TripleTriad = () => (
     <div className="container">
         <div className="wrapper">
@@ -10,6 +12,8 @@ const TripleTriad = () => (
             </header>
             <main>
                 <div className="game-board">
+                <Card />
+                {/* <div className="game-piece"></div>
                 <div className="game-piece"></div>
                 <div className="game-piece"></div>
                 <div className="game-piece"></div>
@@ -17,8 +21,7 @@ const TripleTriad = () => (
                 <div className="game-piece"></div>
                 <div className="game-piece"></div>
                 <div className="game-piece"></div>
-                <div className="game-piece"></div>
-                <div className="game-piece"></div>
+                <div className="game-piece"></div> */}
                 </div>
             </main>
         </div>
